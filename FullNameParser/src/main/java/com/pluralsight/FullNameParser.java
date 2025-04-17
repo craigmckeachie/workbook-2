@@ -8,7 +8,7 @@ public class FullNameParser {
         System.out.println(message);
     }
 
-  
+
     public static void main(String[] args) {
         String fullName = promptForString("Please enter your full name: ");
 
@@ -18,13 +18,23 @@ public class FullNameParser {
         String firstName = "";
         String middleName = "";
         String lastName = "";
-        if(positionOfFirstSpace == -1){
-            firstName= fullName;
-        }else{
-            firstName= fullName.substring(0,positionOfFirstSpace);
+
+        if(fullName.isEmpty()){
+            print("Full name is required.");
+            return;
         }
 
-        if(positionOfFirstSpace != positionOfSecondSpace) {
+
+        boolean hasOnlyFirstName = positionOfFirstSpace == -1;
+        firstName = hasOnlyFirstName ? fullName: fullName.substring(0,positionOfFirstSpace);
+//        if(hasOnlyFirstName){
+//            firstName= fullName;
+//        }else{
+//            firstName= fullName.substring(0,positionOfFirstSpace);
+//        }
+
+        boolean hasMiddleName = positionOfFirstSpace != positionOfSecondSpace;
+        if(hasMiddleName) {
             middleName = fullName.substring(positionOfFirstSpace+1,positionOfSecondSpace);
             lastName = fullName.substring(positionOfSecondSpace+1);
         }else{
