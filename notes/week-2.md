@@ -125,7 +125,7 @@ public class Student {
 
     //getter
    public String getFirstName(){
-       return firstName;
+       return this.firstName;
    }
 
    //setter
@@ -135,7 +135,7 @@ public class Student {
 
    //getter
     public String getLastName(){
-        return lastName;
+        return this.lastName;
     }
 
     //setter
@@ -201,7 +201,7 @@ public class Student {
 
     // getter
     public String getFirstName() {
-        return firstName;
+        return this.firstName;
     }
 
     // setter
@@ -211,7 +211,7 @@ public class Student {
 
     // getter
     public String getLastName() {
-        return lastName;
+        return this.lastName;
     }
 
     // setter
