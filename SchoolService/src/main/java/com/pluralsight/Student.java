@@ -12,15 +12,15 @@ public class Student {
         this.lastName = "";
     }
 
-//this constructor not needed for exercise
-//   public Student(String firstName, String lastName){
-//      this.firstName = firstName;
-//      this.lastName = lastName;
-//   }
+    //this constructor not needed for exercise
+    //   public Student(String firstName, String lastName){
+    //      this.firstName = firstName;
+    //      this.lastName = lastName;
+    //   }
 
     //getter
    public String getFirstName(){
-       return firstName;
+       return this.firstName;
    }
 
    //setter
@@ -30,7 +30,7 @@ public class Student {
 
    //getter
     public String getLastName(){
-        return lastName;
+        return this.lastName;
     }
 
     //setter
