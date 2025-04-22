@@ -14,5 +14,10 @@ public class SchoolApplication {
         //get data using the getters to access the private field member variables
         System.out.println(student.getFirstName());
         System.out.println(student.getLastName());
+
+                                  0          , 1        ,    2
+        Student[] students =  {new Student(), new Student(), new Student};
+
+
     }
 }
